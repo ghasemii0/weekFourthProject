@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>The Movie Theater</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Welcome to your local pizza store</h2>
+      <h4>Which size you would like?</h4>
+      <form id="pizza">
+        <div class="form-group">
+          <select class="form-control" id="size" required>
+            <option value="">---select---</option>
+            <option value="large">Large</option>
+            <option value="medium">Medium</option>
+            <option value="small">Small</option>
+          </select>
+          <div class="invalid-feedback">Please select a size</div>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Option 1</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Option 2</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Option 3</label>
+        </div>
+        <div class="invalid-feedback"></div>
+        <button type="submit" class="btn btn-success">Buy Your Ticket</button>
+      </form>
+      <br>
+      <div class="results">
+      <p> <span class="price"></span> </p>
+    </div>
+
+
+  
+  </body>
+</html>
