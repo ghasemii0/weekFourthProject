@@ -14,7 +14,7 @@ Pizza.prototype.priceBySize = function() {
     this.price += 2;
   }else if (this.size === "medium"){
     this.price;
-  }else if(this.pizza === "small"){
+  }else if(this.size === "small"){
     this.price -= 2;
   }else {
     console.log("There is an error for the pizza size selection.");
@@ -39,7 +39,9 @@ Pizza.prototype.priceByToppings = function() {
   }
 }
 
-
+Pizza.prototype.pizzaInfo = function() {
+  return "-----------------You have purchased a " + this.size + " pizza with " + this.toppings + " topping(s) for " + this.price + "$.---------------";
+}
 
 
 
@@ -50,9 +52,9 @@ $(document).ready(function(){
     var size = $("#size").val();
     var toppings = $("input:checkbox[name=topping]:checked").length;
     var newPizza = new Pizza(size,toppings);
-    console.log(newPizza.price);
-    //console.log(size);
-    //console.log(toppings);
+    console.log(toppings);
+    console.log(size);
+    $(".price").text(newPizza.pizzaInfo());
 
   });
 });
