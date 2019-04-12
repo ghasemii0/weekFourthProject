@@ -37,7 +37,7 @@ Pizza.prototype.priceByToppings = function() {
   }else if (this.toppings === 0){
     this.price;
   }else {
-    alert("Please select the max of 5 toppings!!!");
+    palert("Please select the max of 5 toppings!!!");
   }
 }
 
