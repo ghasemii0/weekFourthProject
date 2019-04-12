@@ -37,8 +37,7 @@ Pizza.prototype.priceByToppings = function() {
   }else if (this.toppings === 0){
     this.price;
   }else {
-    $("#checkboxLimit").show();
-    $(".price").hide();
+    alert("Please select the max of 5 toppings!!!");
   }
 }
 
@@ -50,6 +49,10 @@ Pizza.prototype.priceIfExtraCheese = function() {
 }else {
   console.log("There is an error for the extra cheese selection.");
   }
+}
+
+Pizza.prototype.toppingError = function() {
+  return "Please choose the max of 5 toppings!"
 }
 
 Pizza.prototype.pizzaInfo = function() {
@@ -67,9 +70,7 @@ $(document).ready(function(){
     console.log(extraCheese);
     var toppings = $("input:checkbox[name=topping]:checked").length;
     var newPizza = new Pizza(size,toppings,extraCheese);
-    //console.log(toppings);
-    //console.log(size);
-    $("checkboxLimit").hide();
+    //$("#checkboxLimit").hide();
     $(".result").show();
     $(".price").text(newPizza.pizzaInfo());
 
