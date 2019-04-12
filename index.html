@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <h2>Welcome to your local pizza store</h2>
-      <h4>-Which size you would like?</h4>
+      <h4>-Which size you would like to order?</h4>
       <form id="pizza">
         <div class="form-group">
           <select class="form-control" id="size" required>
@@ -22,6 +22,7 @@
           <div class="invalid-feedback">Please select a size</div>
         </div>
           <h4>-Please select your choice of meet(s):</h4>
+          <h6> *Please select the max of 5 toppings because there is no guarantee your pizza cooks weel. <h6>
           <input type="checkbox" name="topping" value="Pepperoni">Pepperoni.<br>
           <input type="checkbox" name="topping" value="Sasuage">Sasuage.<br>
           <input type="checkbox" name="topping" value="Meatball">Meatball.<br>
@@ -34,8 +35,8 @@
           <input type="checkbox" name="topping" value="Pineapple">Pineapple.<br>
           <input type="checkbox" name="topping" value="Mushrooms">Mushrooms.<br>
           <input type="checkbox" name="topping" value="Jalapeno">Jalapeno.<br>
+          <button type="submit" class="btn btn-success">Submit Your Order</button>
         </div>
-        <button type="submit" class="btn btn-success">Submit Your Order</button>
       </form>
       <br>
       <div class="results">
