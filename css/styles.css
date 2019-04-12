@@ -1,3 +1,9 @@
+.result {
+  display: none;
+}
 h2 {
   text-align: center;
+}
+#checkboxLimit{
+  display: none;
 }

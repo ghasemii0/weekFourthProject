@@ -37,7 +37,8 @@ Pizza.prototype.priceByToppings = function() {
   }else if (this.toppings === 0){
     this.price;
   }else {
-    alert("Pease select the max 5 topings");
+    $("#checkboxLimit").show();
+    $(".price").hide();
   }
 }
 
@@ -68,6 +69,8 @@ $(document).ready(function(){
     var newPizza = new Pizza(size,toppings,extraCheese);
     //console.log(toppings);
     //console.log(size);
+    $("checkboxLimit").hide();
+    $(".result").show();
     $(".price").text(newPizza.pizzaInfo());
 
   });
