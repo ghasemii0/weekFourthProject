@@ -1,12 +1,14 @@
 //bussines logic
 
 //Pizza constructor
-function Pizza(size,toppings) {
+function Pizza(size,toppings,extraCheese) {
   this.size = size,
   this.toppings = toppings,
+  this.extraCheese = extraCheese,
   this.price = 8;
   this.priceBySize();
   this.priceByToppings();
+  this.priceIfExtraCheese();
 }
 
 Pizza.prototype.priceBySize = function() {
@@ -39,6 +41,16 @@ Pizza.prototype.priceByToppings = function() {
   }
 }
 
+Pizza.prototype.priceIfExtraCheese = function() {
+  if(this.extraCheese === "Yes"){
+  this.price += 2;
+}else if(this.extraCheese === "No"){
+  this.price;
+}else {
+  console.log("There is an error for the extra cheese selection.");
+  }
+}
+
 Pizza.prototype.pizzaInfo = function() {
   return "-----------------You have purchased a " + this.size + " pizza with " + this.toppings + " topping(s) for " + this.price + "$.---------------";
 }
@@ -47,13 +59,15 @@ Pizza.prototype.pizzaInfo = function() {
 
 //user interface
 $(document).ready(function(){
-  $("form").submit(function(evetn){
+  $("form").submit(function(event){
     event.preventDefault();
     var size = $("#size").val();
+    var extraCheese = $("input:radio[name=extraCheese]:checked").val();
+    console.log(extraCheese);
     var toppings = $("input:checkbox[name=topping]:checked").length;
-    var newPizza = new Pizza(size,toppings);
-    console.log(toppings);
-    console.log(size);
+    var newPizza = new Pizza(size,toppings,extraCheese);
+    //console.log(toppings);
+    //console.log(size);
     $(".price").text(newPizza.pizzaInfo());
 
   });
