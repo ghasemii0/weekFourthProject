@@ -8,7 +8,7 @@ This webpage is created for a pizza store. Customers can see the prices and orde
 
 ## Setup/Installation Requirements
 
-* Clone from GitHub
+* Clone from GitHub https://github.com/ghasemii0/weekFourthProject
 * Open index.html in chrome
 * Run the application
 
@@ -25,7 +25,7 @@ This webpage is created for a pizza store. Customers can see the prices and orde
 
 ## Support and contact details
 
-If you have any questions or contributions, reach out to Mustafa Ghasemi.
+If you have any questions or contributions, reach out to Mustafa Ghasemi at mostafa_ghasemi63@yahoo.com
 
 ## Technologies Used
 
@@ -33,4 +33,4 @@ HTML, CSS, Bootstrap, JavaScript, jQuery
 
 ### License
 
-Copyright (c) 2019 Mustafa Ghasemi,
+Copyright (c) 2019 Mustafa Ghasemi, Epicodus Student

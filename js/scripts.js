@@ -24,20 +24,26 @@ Pizza.prototype.priceBySize = function() {
 }
 
 Pizza.prototype.priceByToppings = function() {
-  if(this.toppings === 5){
+  if(this.toppings === 8){
+    this.price += 16;
+  }else if (this.toppings === 7){
+    this.price += 14;
+  }else if (this.toppings === 6){
     this.price += 12;
-  }else if (this.toppings === 4){
+  }else if (this.toppings === 5){
     this.price += 10;
-  }else if (this.toppings === 3){
+  }else if (this.toppings === 4){
     this.price += 8;
-  }else if (this.toppings === 2){
+  }else if (this.toppings === 3){
     this.price += 6;
-  }else if (this.toppings === 1){
+  }else if (this.toppings === 2){
     this.price += 4;
+  }else if (this.toppings === 1){
+    this.price += 2;
   }else if (this.toppings === 0){
     this.price;
   }else {
-    palert("Please select the max of 5 toppings!!!");
+    console.log("There is an error for the topping section.");
   }
 }
 
