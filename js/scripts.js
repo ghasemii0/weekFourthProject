@@ -52,7 +52,7 @@ Pizza.prototype.priceIfExtraCheese = function() {
 }
 
 Pizza.prototype.toppingError = function() {
-  return "Please choose the max of 5 toppings!"
+  return "Please choose the max of 5 toppings!";
 }
 
 Pizza.prototype.pizzaInfo = function() {
