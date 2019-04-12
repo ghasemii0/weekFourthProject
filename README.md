@@ -16,11 +16,10 @@ This webpage is created for a pizza store. Customers can see the prices and orde
 ## Specs:
 
 * Program offers the customers to choose between small, medium and large pizza.
-* Gives the customer option to add up to 5 toppings.
+* Gives the customer option to add up to 8 toppings.
 * Also customers can order pizza with extra cheese for $2 more.
-* If user choose more than 5 toppings they will face message "please select max 5 toppings!!!"
-* Large pizza with extra cheese and 5 toppings costs $24.
-* Medium pizza with extra cheese and 3 topping costs $18.
+* Large pizza with extra cheese and 6 toppings costs $24.
+* Medium pizza with extra cheese and 3 topping costs $16.
 * Small pizza without extra cheese and topping costs $6.
 
 ## Support and contact details
