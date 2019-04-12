@@ -5,12 +5,12 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>The Movie Theater</title>
+    <title>Pizza</title>
   </head>
   <body>
     <div class="container">
       <h2>Welcome to your local pizza store</h2>
-      <h4>Which size you would like?</h4>
+      <h4>-Which size you would like?</h4>
       <form id="pizza">
         <div class="form-group">
           <select class="form-control" id="size" required>
@@ -21,17 +21,33 @@
           </select>
           <div class="invalid-feedback">Please select a size</div>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Option 1</label>
+        <!-- <div  id="toppings" class="form-group">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div> -->
+          <h4>-Please select your toppings:</h4>
+          <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni.<br>
+          <input type="checkbox" name="toppings" value="ItalianSasuage">Italian Sasuage.<br>
+          <input type="checkbox" name="toppings" value="Meatball">Meatball.<br>
+          <input type="checkbox" name="toppings" value="Mushrooms">Mushrooms.<br>
+          <input type="checkbox" name="toppings" value="Onions">Onions.<br>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Option 2</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Option 3</label>
-        </div>
-        <div class="invalid-feedback"></div>
-        <button type="submit" class="btn btn-success">Buy Your Ticket</button>
+        <button type="submit" class="btn btn-success">Submit Your Order</button>
       </form>
       <br>
       <div class="results">
@@ -39,6 +55,6 @@
     </div>
 
 
-  
+
   </body>
 </html>
