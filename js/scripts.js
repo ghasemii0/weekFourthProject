@@ -1,5 +1,8 @@
 //bussines logic
-
+function Pizza(size,toppings) {
+  this.size = size,
+  this.toppings
+}
 
 
 
@@ -9,11 +12,8 @@ $(document).ready(function(){
   $("form").submit(function(evetn){
     event.preventDefault();
     var size = $("#size").val();
-    var top = $("input:checkbox[name=toppings]:checked").val();
-    var toppings = '';
-    for (i = 0; i < 3; i++) {
-      toppings += checked[i] + " ";
-    }
+    var toppings = $("input:checkbox[name=topping]:checked").length;
+
     console.log(size);
     console.log(toppings);
 
